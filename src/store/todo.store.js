@@ -9,7 +9,7 @@ const Filters = {
 const state = {
     todos: [
         new Todo('Pieda del alma'),
-        new Todo('Pieda del infinito'),
+        new Todo('Pieda del espacio'),
         new Todo('Pieda del tiempo'),
         new Todo('Pieda del poder'),
         new Todo('Pieda del realidad'),
