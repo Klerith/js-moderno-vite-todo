@@ -11,6 +11,8 @@ const state = {
         new Todo('Pieda del alma'),
         new Todo('Pieda del infinito'),
         new Todo('Pieda del tiempo'),
+        new Todo('Pieda del poder'),
+        new Todo('Pieda del realidad'),
     ],
     filter: Filters.All,
 }
@@ -57,7 +59,14 @@ const addTodo = ( description ) => {
  * @param {String} todoId
  */
 const toggleTodo = ( todoId ) => {
-    throw new Error('Not implemented');
+    
+    state.todos = state.todos.map( todo => {
+        if( todo.id === todoId ) {
+            todo.done = !todo.done;
+        }
+        return todo;
+    });
+
 }
 
 const deleteTodo = ( todoId ) => {
