@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
   }
 }
